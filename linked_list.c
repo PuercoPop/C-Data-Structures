@@ -53,6 +53,7 @@ void insert_ll(ll_node* new_node, ll_node* prev_node){
 
 void remove_ll(ll_node* target_node, ll_node* prev_node){
   prev_node->next = target_node->next;
+  free(target_node);
   // call free on target_node?
 };
 
